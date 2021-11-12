@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.MainActivity">
+
+      <TextView
+          android:id="@+id/titleMyNotes"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="My Notes"
+          android:includeFontPadding="false"
+          android:textColor="@color/white"
+          android:textSize="@dimen/_30ssp"
+          android:layout_marginStart="@dimen/_5sdp"
+          android:layout_marginEnd="@dimen/_5sdp"
+          android:layout_marginBottom="@dimen/_5sdp"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:padding="@dimen/_5sdp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          >
+      </TextView>
+
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/titleMyNotes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <ImageView
+            android:id="@+id/iconSearch"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_search"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:tint="@color/colorSearchIcon">
+        </ImageView>
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:textColor="@color/white"
+            android:includeFontPadding="false"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/backgorund_search"
+            android:hint="Enter Searching "
+            android:layout_gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:textColorHint="@color/colorTextHint"
+            >
+        </EditText>
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/layoutSearch"
+    >
+</androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/noteCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_add"
+        app:tint="@color/black"
+        app:fabSize="normal"
+        android:contentDescription="@string/app_name"
+        android:backgroundTint="@color/colorAcccent"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

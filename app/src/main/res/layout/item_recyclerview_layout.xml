@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/recyclerLayout"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_recyclerview"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/recyclerImageAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+         android:background="@drawable/background_imagemain"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/recyclerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:padding="@dimen/_3sdp"
+        android:text="Denemesalfdsligskfli"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/recyclerSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextSubtitle"
+        android:text="Denemesafdskşsdjgkşkşj"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:includeFontPadding="false"
+        android:fontFamily="sans-serif-medium"
+        android:padding="@dimen/_3sdp"
+        android:textSize="@dimen/_12sdp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/recyclerDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text="Çarşamaba 13 2021"
+        android:textColor="@color/colorTextHint"
+        android:layout_marginBottom="@dimen/_4sdp"
+        ></TextView>
+
+
+</LinearLayout>
